@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500&display=swap");
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            overflow: hidden;
+          }
+          .sec-1{
+            border: 2px solid red;
+            background-image: url("curved-arrow.png");
+            background-repeat: no-repeat;
+            background-size: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          .container{
+            background-color: #FCF5ED;
+            height: 70%;
+            width: 40%;
+            border-radius: 10px;
+          }
+          .container .box1{
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: #F6F6F7;
+            height: 50%;
+          }
+          .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: #1B1B20;
+            height: 30%;
+            width: 20%;
+            border-radius: 10px;
+          }
+          .box1 h1{
+            color: black;
+            font-family: itim;
+          }
+          .box2 h1{
+            color: white;
+            font-family: itim;
+          }
+          h2{
+            position: absolute;
+            color: white;
+            margin-top: 60%;
+            font-family: itim;
+          }
+
+          
+    </style>
+</head>
+<body>
+    <div class="sec-1">
+    <div class="container">
+        <div class="box1">
+            <h1>Score</h1>
+        </div>
+      </div>
+      <div class="box2">
+            <h1>1<br>--<br>6</h1>
+            <h2 class="score">You lost!</h2>
+      </div>
+      
+    </div>
+      
+</body>
+</html>

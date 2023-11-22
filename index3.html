@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sec-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2%;
+        }
+
+        .wrapper {
+            width: 600px;
+            background: #1B1B20;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .wrapper .content-box {
+            padding: 10px 20px 0px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .content-box .typing-text {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .typing-text p {
+            font-size: 20px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        .content-box .content {
+            display: flex;
+            margin-top: 20px;
+            border-top: 1px solid grey;
+            justify-content: space-between;
+        }
+
+        .content .result-details {
+            display: flex;
+            width: 40rem;
+            margin-right: 3rem;
+            justify-content: space-between;
+        }
+
+        .result-details li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .result-details li span {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 17vh;
+            justify-content: space-between;
+            padding: 10px 5vw 0px 5vw;
+            /*top right bottom left*/
+        }
+
+        .container img {
+            height: 30px;
+        }
+
+        #absolute {
+            height: 17vh;
+            top: 1%;
+            left: 45%;
+        }
+        .btn{
+            position: absolute;
+            border-radius: 20px;
+            background-color: #FFC436;
+            height: 6%;
+            width: 7%;
+            display: flex;
+            margin-top: 40%;
+            margin-right: 85%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section1">
+        <div class="container">
+            <img src="/speaker.png" alt="speaker" />
+            <img src="/logo.png" alt="logo" id="absolute" />
+            <img src="/information.png" alt="Information" />
+        </div>
+    </div>
+
+    <div class="sec-2">
+        <div class="wrapper">
+            <input type="text" class="input-field">
+            <div class="content-box">
+                <div class="typing-text">
+                    <p></p>
+                </div>
+                <div class="content">
+                    <ul class="result-details">
+                        <li class="time">
+                            <p>Time Left:</p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        <li class="Errors">
+                            <p>Time Left:</p>
+                            <span>0</span>
+                        </li>
+                        <li class="CPM">
+                            <p>Mistakes:</p>
+                            <span>0</span>
+                        </li>
+                        <li class="WPM">
+                            <p>CPM:</p>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/paragraph.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
